@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c8683c91-3bd4-4bcf-bb54-952f0149dbf9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/dummy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Comp268 Assignment 2/Question1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Comp268 Assignment 2/Question1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Question1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Question1.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -20,8 +23,20 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Question1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="11" lean-forward="true" selection-start-line="9" selection-start-column="9" selection-end-line="15" selection-end-column="11" />
+            <state relative-caret-position="1125">
+              <caret line="75" column="25" selection-start-line="75" selection-start-column="25" selection-end-line="75" selection-end-column="25" />
+              <folding>
+                <element signature="e#0#3085#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/dummy.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -41,6 +56,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/src/dummy.java" />
         <option value="$PROJECT_DIR$/src/Question1.java" />
       </list>
     </option>
@@ -51,7 +67,9 @@
     <option name="width" value="1404" />
     <option name="height" value="969" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -64,6 +82,11 @@
             <path>
               <item name="Comp268 Assignment 2" type="b2602c69:ProjectViewProjectNode" />
               <item name="Comp268 Assignment 2" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Comp268 Assignment 2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Comp268 Assignment 2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Comp268 Assignment 2" type="b2602c69:ProjectViewProjectNode" />
@@ -92,9 +115,16 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Question1">
     <configuration name="Question1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Question1" />
+      <module name="Comp268 Assignment 2" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="dummy" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="dummy" />
       <module name="Comp268 Assignment 2" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -103,6 +133,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Question1" />
+        <item itemvalue="Application.dummy" />
       </list>
     </recent_temporary>
   </component>
@@ -133,7 +164,7 @@
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Terminal" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" />
+      <window_info anchor="bottom" id="Messages" weight="0.32969433" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.33406115" />
@@ -152,10 +183,20 @@
     </layout>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/dummy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Question1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="11" lean-forward="true" selection-start-line="9" selection-start-column="9" selection-end-line="15" selection-end-column="11" />
+        <state relative-caret-position="1125">
+          <caret line="75" column="25" selection-start-line="75" selection-start-column="25" selection-end-line="75" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#3085#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

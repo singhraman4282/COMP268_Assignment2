@@ -1,50 +1,63 @@
+/*
+Read three sentences from the console application. Each sentence should not exceed 80
+characters. Then, copy each character in each input sentence in a [3 x 80] character array.
+The first sentence should be loaded into the first row in the reverse order of characters – for
+example, “mary had a little lamb” should be loaded into the array as “bmal elttil a dah yram”.
+The second sentence should be loaded into the second row in the reverse order of words – for
+example, “mary had a little lamb” should be loaded into the array as “lamb little a had mary”.
+The third sentence should be loaded into the third row where if the index of the array is divisible by
+5, then the corresponding character is replaced by the letter ‘z’ – for example, “mary had a little
+lamb” should be loaded into the array as “mary zad azlittze lazb” – that is, characters in index
+positions 5, 10, 15, and 20 were replaced by ‘z’.
+Note that an empty space is also a character, and that the index starts from position 0. Now print
+the contents of the character array on the console.
+ */
+
+import java.util.Scanner;
+
 public class Question1 {
 
     private static char[][] chars = new char[3][80];
 
     public static void main(String[] args) {
 
-        String firstSentence = truncataSentence("The first sentence should be loaded into the first row in the reverse order of characters");
-        firstSentence = reverseByCharacters(firstSentence);
+        Scanner scanner = new Scanner(System.in);
 
-//        for (int i=0; i<3; i++) {
-//            char[] c = new char[80];
-//            for (int j=0; j<80; j++) {
-//                c[j] = firstSentence.charAt(j);
-//            }
-//            chars[i] = c;
-//        }
+        System.out.println("Please enter first sentence");
+        String s1 = scanner.nextLine();
+        s1 = truncataSentence(s1);
+        s1 = reverseByCharacters(s1);
 
-        String secondSentence = reverseByWords("The first sentence should be loaded into the first row in the reverse order of characters");
-        String thirdSentence =  change5thPosition("The first sentence should be loaded into the first row in the reverse order of characters");
+        System.out.println("Please enter second sentence");
+        String s2 = scanner.nextLine();
+        s2 = truncataSentence(s2);
+        s2 = reverseByWords(s2);
 
-        char[] c1 = new char[80];
-        char[] c2 = new char[80];
-        char[] c3 = new char[80];
+        System.out.println("Please enter third sentence");
+        String s3 = scanner.nextLine();
+        s3 = truncataSentence(s3);
+        s3 = change5thPosition(s3);
 
-        for (int j=0; j<80; j++) {
-            c1[j] = firstSentence.charAt(j);
+
+        char[] row1 = new char[80];
+        char[] row2 = new char[80];
+        char[] row3 = new char[80];
+
+
+        for (int i=0; i<80; i++) {
+            row1[i] = s1.charAt(i);
+            row2[i] = s2.charAt(i);
+            row3[i] = s3.charAt(i);
         }
 
-        for (int j=0; j<80; j++) {
-            c2[j] = secondSentence.charAt(j);
-        }
-
-        for (int j=0; j<80; j++) {
-            c3[j] = thirdSentence.charAt(j);
-        }
-
-
-        chars[0] = c1;
-        chars[1] = c2;
-        chars[2] = c3;
-
-
+        chars[0] = row1;
+        chars[1] = row2;
+        chars[2] = row3;
 
         System.out.println(printChar2DArray(chars));
 
-
     }
+
 
     public static String change5thPosition(String s) {
         String changed = "";
@@ -64,11 +77,10 @@ public class Question1 {
 
         for (int i=0; i<arr.length; i++) {
             char[] c = arr[i];
-            System.out.println(c);
             for (int j=0; j<80; j++) {
                 matrix = matrix + "|" + c[j];
             }
-            matrix = matrix + "\n";
+            matrix = matrix + "|\n";
         }
 
 
@@ -109,10 +121,19 @@ public class Question1 {
 
     public static String truncataSentence(String s) {
         String truncated = "";
-        for (int i=0; i<80;i++) {
-            char c = s.charAt(i);
-            truncated = truncated + c;
+        if (s.length() >= 80) {
+            for (int i=0; i<80;i++) {
+                char c = s.charAt(i);
+                truncated = truncated + c;
+            }
+        } else {
+            int difference = 80 - s.length();
+            truncated = s;
+            for (int i=0; i<difference; i++) {
+                truncated = truncated + " ";
+            }
         }
+
         return truncated;
     }
 
