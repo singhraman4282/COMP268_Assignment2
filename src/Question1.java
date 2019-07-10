@@ -1,17 +1,79 @@
 public class Question1 {
 
+    private static char[][] chars = new char[3][80];
+
     public static void main(String[] args) {
 
-        String truncatesd = reverseByWords("The first sentence should be loaded into the first");
-        System.out.println(truncatesd);
+        String firstSentence = truncataSentence("The first sentence should be loaded into the first row in the reverse order of characters");
+        firstSentence = reverseByCharacters(firstSentence);
+
+//        for (int i=0; i<3; i++) {
+//            char[] c = new char[80];
+//            for (int j=0; j<80; j++) {
+//                c[j] = firstSentence.charAt(j);
+//            }
+//            chars[i] = c;
+//        }
+
+        String secondSentence = reverseByWords("The first sentence should be loaded into the first row in the reverse order of characters");
+        String thirdSentence =  change5thPosition("The first sentence should be loaded into the first row in the reverse order of characters");
+
+        char[] c1 = new char[80];
+        char[] c2 = new char[80];
+        char[] c3 = new char[80];
+
+        for (int j=0; j<80; j++) {
+            c1[j] = firstSentence.charAt(j);
+        }
+
+        for (int j=0; j<80; j++) {
+            c2[j] = secondSentence.charAt(j);
+        }
+
+        for (int j=0; j<80; j++) {
+            c3[j] = thirdSentence.charAt(j);
+        }
+
+
+        chars[0] = c1;
+        chars[1] = c2;
+        chars[2] = c3;
+
+
+
+        System.out.println(printChar2DArray(chars));
+
+
     }
 
     public static String change5thPosition(String s) {
-        return "";
+        String changed = "";
+        for (int i=0; i<s.length(); i++) {
+            char c = s.charAt(i);
+            if ((i%5 == 0) && (i>0)) {
+                c = 'z';
+            }
+            changed = changed + c;
+        }
+        return changed;
     }
 
     public static String printChar2DArray(char[][] arr) {
-        return "";
+
+        String matrix = "";
+
+        for (int i=0; i<arr.length; i++) {
+            char[] c = arr[i];
+            System.out.println(c);
+            for (int j=0; j<80; j++) {
+                matrix = matrix + "|" + c[j];
+            }
+            matrix = matrix + "\n";
+        }
+
+
+
+        return matrix;
     }
 
     public static String reverseByCharacters(String s) {

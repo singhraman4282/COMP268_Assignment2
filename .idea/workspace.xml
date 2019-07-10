@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c8683c91-3bd4-4bcf-bb54-952f0149dbf9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Question1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Question1.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -21,14 +20,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Question1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="42" selection-start-line="4" selection-start-column="42" selection-end-line="4" selection-end-column="42" />
-              <folding>
-                <element signature="e#124#125#0" expanded="true" />
-                <element signature="e#148#149#0" expanded="true" />
-                <element signature="e#216#217#0" expanded="true" />
-                <element signature="e#240#241#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="225">
+              <caret line="15" column="11" lean-forward="true" selection-start-line="9" selection-start-column="9" selection-end-line="15" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -143,7 +136,7 @@
       <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.12772925" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.33406115" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -161,14 +154,8 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Question1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="42" selection-start-line="4" selection-start-column="42" selection-end-line="4" selection-end-column="42" />
-          <folding>
-            <element signature="e#124#125#0" expanded="true" />
-            <element signature="e#148#149#0" expanded="true" />
-            <element signature="e#216#217#0" expanded="true" />
-            <element signature="e#240#241#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="225">
+          <caret line="15" column="11" lean-forward="true" selection-start-line="9" selection-start-column="9" selection-end-line="15" selection-end-column="11" />
         </state>
       </provider>
     </entry>
