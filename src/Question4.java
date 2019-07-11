@@ -29,8 +29,28 @@ number of times the player won and the number of times the player lost.
 public class Question4 {
 
     public static void main(String[] args) {
-        RandomSumGame randomSumGame = new RandomSumGame();
-        boolean a = randomSumGame.play();
+
+
+
+        int n = 0;
+        int gamesWon = 0;
+        boolean gameOver = false;
+
+        do {
+            n++;
+            RandomSumGame randomSumGame = new RandomSumGame();
+            boolean a = randomSumGame.play();
+            if (a)
+                gamesWon++;
+
+
+            gameOver = (n >= 3);
+
+        } while (!gameOver);
+
+        System.out.println("Game Over!");
+        System.out.println("You won " + gamesWon + " games.");
+        System.out.println("You lost " + (3 - gamesWon) + " games.");
     }
 
 }

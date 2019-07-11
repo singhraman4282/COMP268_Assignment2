@@ -16,6 +16,7 @@ public class RandomSumGame {
     }
 
     public boolean play() {
+        System.out.println("\nStarting game");
         rollDice();
         return won();
 
