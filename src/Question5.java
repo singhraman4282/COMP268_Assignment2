@@ -12,4 +12,19 @@ The distributionOfQualification() method loops through the 100 objects and count
 number of citizens corresponding to each of the four educational qualifications.
  */
 public class Question5 {
+
+    public static void main(String[] args) {
+
+
+        Village village = new Village();
+        for (int i=0; i<100; i++) {
+            village.addCitizen();
+        }
+
+        ComputeIntellect computeIntellect = new ComputeIntellect();
+        computeIntellect.distributionOfQualification(village.citizens);
+
+
+    }
+
 }
