@@ -17,11 +17,11 @@ public class BadmintonScoring {
     }
 
     public int getPlayer1Points() {
-        return -1;
+        return points(scores[0]);
     }
 
     public int getPlayer2Points() {
-        return -1;
+        return points(scores[1]);
     }
 
     private int maxInRow(int[] arr) {
@@ -46,4 +46,17 @@ public class BadmintonScoring {
 
         return max;
     }
+
+    private int points(int[] arr) {
+        int points = 0;
+
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] != 0)
+                points++;
+        }
+
+        return points;
+    }
+
+
 }

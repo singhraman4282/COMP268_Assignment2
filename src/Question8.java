@@ -87,8 +87,14 @@ public class Question8 {
 
 
         BadmintonScoring badmintonScoring = new BadmintonScoring(scores);
-        System.out.println(badmintonScoring.getContinuousPointsPlayer1());
-        System.out.println(badmintonScoring.getContinuousPointsPlayer2());
+
+        System.out.println("Continous points by player1: " + badmintonScoring.getContinuousPointsPlayer1());
+        System.out.println("Continous points by player2: " + badmintonScoring.getContinuousPointsPlayer2());
+
+        System.out.println("points by player1: " + badmintonScoring.getPlayer1Points());
+        System.out.println("points by player2: " + badmintonScoring.getPlayer2Points());
+
+
 
 
 
