@@ -29,6 +29,7 @@ V. Identify the type of stroke that earned most points for each player.
  */
 
 import java.util.ArrayList;
+import java.util.HashMap;
 
 public class Question8 {
 
@@ -88,17 +89,38 @@ public class Question8 {
 
         BadmintonScoring badmintonScoring = new BadmintonScoring(scores);
 
-        System.out.println("Continous points by player1: " + badmintonScoring.getContinuousPointsPlayer1());
-        System.out.println("Continous points by player2: " + badmintonScoring.getContinuousPointsPlayer2());
-
+        // I. Compute the maximum points scored by Player 1 and Player 2.
         System.out.println("points by player1: " + badmintonScoring.getPlayer1Points());
         System.out.println("points by player2: " + badmintonScoring.getPlayer2Points());
 
 
+        // II. Compute the maximum number of points scored in a continuous sequence by Player 1 and
+        //Player 2
+        System.out.println("Continous points by player1: " + badmintonScoring.getContinuousPointsPlayer1());
+        System.out.println("Continous points by player2: " + badmintonScoring.getContinuousPointsPlayer2());
 
 
 
+        // IV. Store the following score of a single game using the modified BadmintonScoring class.
+        BadmintonScoringWithStroke badmintonScoringWithStroke = new BadmintonScoringWithStroke(points);
 
+
+        // V. Identify the type of stroke that earned most points for each player
+        System.out.println("max strokes by player1: " + badmintonScoringWithStroke.getMostUsedStrokesPlayer1());
+        System.out.println("max strokes by player2: " + badmintonScoringWithStroke.getMostUsedStrokesPlayer2());
+
+
+        // III.
+        HashMap<Integer,HashMap<Integer,String>> outer = new HashMap<Integer,HashMap<Integer,String>>();
+
+        for (int i = 0; i < points.size(); i++) {
+            Point point = points.get(i);
+            HashMap<Integer, String> inner = new HashMap<Integer, String>();
+            inner.put(point.getPlayer(), point.getStroke());
+            outer.put(i,inner);
+        }
+
+        System.out.println(outer);
 
     }
 }
