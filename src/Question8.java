@@ -81,12 +81,15 @@ public class Question8 {
                 scores[0][i] = 0;
             }
 
-            System.out.println(scores[0][i] + " " + scores[1][i]);
+//            System.out.println(scores[0][i] + " " + scores[1][i]);
         }
 
 
 
-//        BadmintonScoring badmintonScoring = new BadmintonScoring()
+        BadmintonScoring badmintonScoring = new BadmintonScoring(scores);
+        System.out.println(badmintonScoring.getContinuousPointsPlayer1());
+        System.out.println(badmintonScoring.getContinuousPointsPlayer2());
+
 
 
 
