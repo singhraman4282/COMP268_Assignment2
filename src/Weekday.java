@@ -24,10 +24,10 @@ public class Weekday {
     public static final int SATURDAY = 6;
 
     public String getWeekDay(int day, int month, int year) {
-
+        numberOfDays = 0;
         numberOfDays += numberOfDays + ((year - 1900) * 365);
         int leapYearAdjustment = (year - 1900) / 4;
-        numberOfDays -= leapYearAdjustment;
+        numberOfDays += leapYearAdjustment;
 
         int daysTillMonth = daysUntilThisMonth(month);
         numberOfDays += daysTillMonth;
@@ -39,13 +39,15 @@ public class Weekday {
         }
 
         int mod = numberOfDays % 7;
+        System.out.println("numberOfDays: " + numberOfDays);
+        System.out.println("mod: " + mod);
 
         return dayName(mod);
     }
 
     public static void main(String[] args) {
         Weekday weekday = new Weekday();
-        System.out.println(weekday.getWeekDay(1,1,1999));
+        System.out.println(weekday.getWeekDay(2,2,1996));
 
 
 
