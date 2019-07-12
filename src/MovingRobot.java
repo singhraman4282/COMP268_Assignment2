@@ -42,21 +42,6 @@ public class MovingRobot extends Robot {
                                 return true;
                     }
         }
-
-        if (x == 0) {
-            switch (y) {
-                case 0:
-                    return (m == Robot.RIGHT || m == Robot.DOWN || m == Robot.RIGHT_DOWN_CORNER);
-                case 9:
-                    return (m == Robot.RIGHT || m == Robot.UP || m == Robot.RIGHT_UP_CORNER);
-                    default:
-                        return (m == Robot.RIGHT || m == Robot.UP || m == Robot.RIGHT_UP_CORNER || m == Robot.DOWN || m == Robot.RIGHT_DOWN_CORNER);
-            }
-        }
-
-
-
-        return false;
     }
 
     public int generateNextMove() {
