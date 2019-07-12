@@ -7,6 +7,7 @@
 public class Robot {
     int x;
     int y;
+    String name = "";
 
     public static final int UP = 1;
     public static final int DOWN = 2;
@@ -28,6 +29,7 @@ public class Robot {
     }
 
     public void setX(int x) {
+        System.out.println(name + " changing x from " + this.x + " to " + x);
         this.x = x;
     }
 
@@ -36,6 +38,7 @@ public class Robot {
     }
 
     public void setY(int y) {
+        System.out.println(name + " changing y from " + this.y + " to " + y);
         this.y = y;
     }
 }

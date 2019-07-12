@@ -17,8 +17,25 @@ Implement this program with a Robot class and a MovingRobot subclass.
 
 public class Question9 {
     public static void main(String[] args) {
-        Robot r1 = new Robot(0,0);
-        Robot r2 = new Robot(9,9);
+        MovingRobot r1 = new MovingRobot(0,0);
+        MovingRobot r2 = new MovingRobot(9,9);
+        r1.name = "r1";
+        r2.name = "r2";
+
+        boolean samePointReached = false;
+
+        do {
+            r1.move();
+            r2.move();
+
+            samePointReached = MovingRobot.sameSlot(r1,r2);
+
+        } while (!samePointReached);
+
+
+        System.out.println(r1.printMoves());
+        System.out.println(r2.printMoves());
+
     }
 }
 
